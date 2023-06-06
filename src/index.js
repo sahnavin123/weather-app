@@ -5,10 +5,12 @@ const result = document.querySelector(".result");
 const getWeather = async (city) => {
   try {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      mode: "cors",
+    });
     const data = await response.json();
     search.value = "";
-    return showResult(data);
+    showResult(data);
   } catch (err) {
     console.log(err);
   }
