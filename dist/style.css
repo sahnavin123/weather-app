@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  background-image: url("https://images.unsplash.com/photo-1592685450678-a387f26487c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: rgb(24, 24, 31);
+}
+
+.content > h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+form {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+form input {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  width: 12.6rem;
+}
+
+.btn {
+  background-color: rgb(236, 85, 233);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(229, 46, 232);
+}
+
+.content .result {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content .result .errorMsg {
+  font-size: 2rem;
+}
